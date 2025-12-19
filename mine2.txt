@@ -1,6 +1,4 @@
-Mine, Hello World
-
-# git 명령어 사용 #
+##### git 명령어 사용 #####
 
 # 등록된 계정 확인
 git config --list
@@ -39,18 +37,19 @@ history
 cp 생성파일명 기존파일명
 
 
-# 태그관리 #
+### 태그관리 ###
 # 태그목록보기 git tag
 # 태그위치와 커밋정보 확인
 git show tag-name
 # 태그생성
 git tag tag-name
 
-# 브랜치관리 #
+### 브랜치관리 ###
 # 브랜치 전환 + 생성
 git checkout -b 브랜치명
 # 브랜치 관리시 깔끔한 상태에서 이동하기
-#add+commit
+
+### add+commit 일괄 ###
 git commit -a -m "커밋메시지"
 
 
@@ -60,3 +59,13 @@ cp ../mine/*.txt .
 
 # git 되돌리기 (커밋전, 커밋후)
 https://about-tech.tistory.com/250
+
+
+
+### Git원격 저장소 연결 확인 및 연결 끊기 ###
+#확인 - git remote -v
+#연결끊기 - git remote remove <name>
+git remote remove origin
+#재연결 - git remote add <name> <url>
+git remote add origin https://github.com/seoa1218/Reponame.git
+ 
