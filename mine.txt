@@ -1,0 +1,43 @@
+Mine, Hello World
+
+# git 명령어 사용 #
+
+# 등록된 계정 확인
+git config --list
+
+# 계정 등록
+git config --global user.name "Seoa"
+git config --global user.email "academysa1218@gmail.com"
+
+
+# 폴더생성 및 폴더제거
+mkdir 폴더명
+rmdir 폴더명
+
+# 폴더의 파일 목록 확인
+ls -al
+   
+# 깃 저장소 생성(최초 1회, 초기화)
+git init
+
+# 변경사항 저장 - 스테이징 
+git add "파일명" OR git add .(전체)
+
+# 커밋등 상태 확인
+git status
+
+# 커밋
+git commit -m "first commit" mine.txt
+
+# 로그 확인
+git log or git log --oneline
+
+# 리눅스 터미널 명령어 히스토리
+history
+
+# 파일 복사본 생성
+cp 기존파일명 생성파일명
+
+#지워진 기록도 확인하기
+git reflog
+

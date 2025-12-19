@@ -1,0 +1,58 @@
+Mine, Hello World
+
+# git 명령어 사용 #
+
+# 등록된 계정 확인
+git config --list
+
+# 계정 등록
+git config --global user.name "Seoa"
+git config --global user.email "academysa1218@gmail.com"
+
+
+# 폴더생성 및 폴더제거
+mkdir 폴더명
+rmdir 폴더명
+
+# 폴더의 파일 목록 확인
+ls -al
+   
+# 깃 저장소 생성(최초 1회, 초기화)
+git init
+
+# 변경사항 저장 - 스테이징 
+git add "파일명" or git add .
+
+# 커밋등 상태 확인
+git status
+
+# 커밋
+git commit -m "first commit" mine.txt
+
+# 로그 확인
+git log or git log --oneline
+
+# 리눅스 터미널 명령어 히스토리
+history
+
+# 파일 복사본 생성
+cp 생성파일명 기존파일명
+
+
+# 태그관리 #
+# 태그목록보기 git tag
+# 태그위치와 커밋정보 확인
+git show tag-name
+# 태그생성
+git tag tag-name
+
+# 브랜치관리 #
+# 브랜치 전환 + 생성
+git checkout -b 브랜치명
+# 브랜치 관리시 깔끔한 상태에서 이동하기
+#add+commit
+git commit -a -m "커밋메시지"
+
+
+# 부모폴더의 확장자가 txt인 모든 파일을 현재 디렉터리에 복사
+cp ../mine/*.txt .
